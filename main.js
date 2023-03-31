@@ -1,11 +1,13 @@
 rover_x=10;
 rover_y=10;
-background_image="mars.jpg";
 rover_image="rover.png";
 canvas=document.getElementById("myCanvas");
 ctx=canvas.getContext("2d");
 rover_width=100;
 rover_height=90;
+nasaimagesarray=["image1.png", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
+random_number=Math.floor(Math.random()*5);
+background_image=nasaimagesarray[random_number]
 function add(){
     background_imgTag = new Image();
     background_imgTag.onload = uploadBackground;
